@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Amazing Planeterium</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="planetarium.js">
+
+		</script>
+		<style type="text/css">
+			body { 
+				background-image:url("images/bg2.gif");
+				position : absolute
+				background-repeat: no-repeat
+				
+				}
+			.space{
+				background-image: url("images/spaceship.png");
+				width: 150px;
+				height: 100px;
+				background-size: 100% 100%;
+				transition: margin 5.0s linear 0s;
+				transform: rotateY(180deg);
+				display: block;
+				
+			}
+			.space:hover{
+				background-image: url("images/clickme.png");
+			}
+				
+		</style>
+	<body onload="bgMusic()">
+	<ul id="descriptions">
+		<li> 
+		<h2 id="sun">Sun</h2>
+		<p>The Sun or Sol, is the star at the centre of our solar system and is responsible for the Earth climate and weather. 
+			The Sun is an almost perfect sphere with a difference of just 10km in diameter between the poles and the equator. 
+			The average radius of the Sun is 695,508 km (109.2 x that of the Earth) of which 20 to 25 percent is the core.
+			The Sun has a very strong magnetic field;
+			Solar flares occur when magnetic energy is released by the Sun during magnetic storms, which we see as sunspots. In sunspots, the magnetic lines are twisted and they spin, much like a tornado would on Earth.
+			The Sun generates solar wind;
+			This is a stream of charged particles, which travels through the Solar System at approximately 450 kilometres per second. 
+			Solar wind occurs where the magnetic field of the Sun extends into space instead of following its surface.
+</li>
+		
+		<li>
+		<h2 id="mercury">Mercury</h2>
+		<p>Mercury is the closest planet to the Sun and due to its proximity it is not easily seen except during twilight. Mercury is the smallest planet in the Solar System:
+			One of five planets visible with the naked eye a, Mercury is just 4,879 Kilometres across its equator, compared with 12,742 Kilometres for the Earth.
+			Mercury is the second densest planet:
+			Even though the planet is small, Mercury is very dense. Each cubic centimetre has a density of 5.4 grams, with only the Earth having a higher density. This is largely due to Mercury being composed mainly of heavy metals and rock.
+			Mercury has a molten core: 
+			In recent years scientists from NASA have come to believe the solid iron core of Mercury could in fact be molten. Normally the core of smaller planets cools rapidly, but after extensive research, the results were not in line with those expected from a solid core. 
+			Mercury is the most cratered planet in the Solar System
+</li>
+		
+		<li>
+		<h2 id="venus">Venus</h2>
+		<p>Venus is the second planet from the Sun and is the second brightest object in the night sky after the Moon. 
+			Named after the Roman goddess of love and beauty, Venus is the second largest terrestrial planet and is sometimes referred to as the Earth sister planet due the their similar size and mass. 
+			The surface of the planet is obscured by an opaque layer of clouds made up of sulfuric acid.
+			Venus is the hottest planet in our solar system:
+			The average surface temperature is 462 Degree Celcius, and because Venus does not tilt on its axis, there is no seasonal variation. 
+			The dense atmosphere of around 96.5 percent carbon dioxide traps heat and causes a greenhouse effect. 
+</li>
+		
+		<li>
+		<h2 id="earth">Earth</h2>
+		<p>Earth is the third planet from the Sun and is the largest of the terrestrial planets. Unlike the other planets in the solar system that are named after classic deities the Earth name comes from the Anglo Saxon worderda which means ground or soil. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.
+			Earth has a powerful magnetic field;
+			This phenomenon is caused by the nickel iron core of the planet, coupled with its rapid rotation. This field protects the Earth from the effects of solar wind.
+			Earth is the only planet not named after a god;
+			Of all the planets in our solar system, the Earth has the greatest density;
+			This varies according to the part of the planet; for example, the metallic core is denser than the crust. The average density of the Earth is approximately 5.52 grams per cubic centimetre.
+</li>
+		
+		<li>
+		<h2 id="mars">Mars</h2>
+		<p>  Mars is the fourth planet from the Sun. Named after the Roman god of war, and often described as the Red Planet due to its reddish appearance. 
+				Mars is a terrestrial planet with a thin atmosphere composed primarily of carbon dioxide.
+				Mars has the largest dust storms in the solar system;
+				They can last for months and cover the entire planet. 
+				The seasons are extreme because of its elliptical orbital path around the Sun is more elongated than most other planets in the solar system.
+				The ancient Greeks called the planet Ares, after their god of war; 
+				The Romans then did likewise, associating the planet blood-red colour with Mars, their own god of war. Interestingly, other ancient cultures also focused on colour to China astronomers it was THE FIRE START, whilst Egyptian priests called on HER DESHER, or THE RED ONE. 
+				The red colour Mars is known for is due to the rock and dust covering its surface being rich in iron.
+		
+		</li>
+		
+		<li>
+		<h2 id="jupiter">Jupiter</h2>
+		<p>The most massive planet in our solar system, with four large moons and many smaller moons, Jupiter forms a kind of miniature solar system. Jupiter resembles a star in composition. In fact, if it had been about 80 times more massive, it would have become a star rather than a planet.</p>
+		</li>
+		
+		<li>
+		<h2 id="saturn">Saturn</h2>
+		<p>Saturn is the sixth planet from the Sun and the most distant that can be seen with the naked eye. It is best known for its fabulous ring system that was discovered in 1610 by the astronomer Galileo Galilei.
+			Saturn can be seen with the naked eye:
+			It is the fifth brightest object in the solar system and is also easily studied through binoculars or a small telescope.
+			Saturn has the most extensive rings in the solar system:
+			The Saturnian rings are made mostly of chunks of ice and small amounts of carbonaceous dust. The rings stretch out more than 120,700 km from the planet, but are are amazingly thin: only about 20 meters thick.
+</li>
+		
+		<li>
+		<h2 id="uranus">Uranus</h2>
+		<p>Uranus is the seventh planet from the Sun. It’s not visible to the naked eye, and became the first planet discovered with the use of a telescope. Uranus is tipped over on its side with an axial tilt of 98 degrees. It is often described as “rolling around the Sun on its side.”
+			Uranus is often referred to as an ICE GIANT planet;
+			Like the other gas giants, it has a hydrogen upper layer, which has helium mixed in. Below that is an icy “mantle, which surrounds a rock and ice core. 
+			Uranus is the Coldest Planet:
+			With minimum atmospheric temperature of negative 224 Degree Celcius. 
+			Uranus is the coldest planet in the solar system. 
+</li>
+		
+		<li>
+		<h2 id="neptune">Neptune</h2>
+		<p>Neptune is the eighth planet from the Sun and is the most distant planet from the Sun. This gas giant planet may have formed much closer to the Sun in early solar system history before migrating to its present position.
+		Neptune is the smallest of the ice giants:
+		Despite being smaller than Uranus, Neptune has a greater mass. Below its heavy atmosphere, Uranus is made of layers of hydrogen, helium, and methane gases.
+		Neptune has a very active climate:
+		Large storms whirl through its upper atmosphere, and high-speed winds track around the planet at up 600 meters per second.
+		Neptune has a very thin collection of rings:
+		They are likely made up of ice particles mixed with dust grains and possibly coated with a carbon-based substance.
+		Neptune has 14 moons:
+		The most interesting moon is Triton, a frozen world that is spewing nitrogen ice and dust particles out from below its surface.
+</li>
+		
+		<li>
+		<h2 id="pluto">Pluto</h2>
+		<p>Pluto is the second closest dwarf planet to the Sun and was at one point classified as the ninth planet. Pluto is also the second most massive dwarf planet with Eris being the most massive
+			Pluto is named after the Greek god of the underworld:
+			This is a later name for the more well known Hades and was proposed by Venetia Burney an eleven year old schoolgirl from Oxford, England.
+			Pluto has a eccentric and inclined orbit:
+			This takes it between 4.4 and 7.4 billion km from the Sun meaning Pluto is periodically closer to the Sun than Neptune.
+</li>
+	</ul>
+		<script>
+			
+		</script>
+		<center><div id="main">
+		
+		<div  id ="sun" >
+			<img src="images/sun.png" style= "position:absolute;width:150px;height:150px;left:602px;top:260px;">
+		</div>
+		
+		
+		<div id ="orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:170px;height:170px;left:44%;top:37%;">
+		</div>
+		
+		<div id ="mercury" 
+		style= "position:absolute;width:240px;height:240px;left:639px;top:300px;">
+			<img src="images/mercury.gif" width="20px" height="20px">
+		</div>
+		
+		<div id ="orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:220px;height:220px;left:42%;top:33%;">
+		</div>
+		
+		<div id = "venus">
+			<img src="images/venus.gif"  
+			style= "position:absolute;width:25px;height:20px;left:600px;top:232px;">
+		</div>
+		
+		<div id = "orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:280px;height:280px;left:40%;top:29%;">
+		</div>
+		
+		<div id = "earth">
+			<img src="images/earth.png" width="40px" height="40px" 
+			style= "position:absolute;width:30px;height:30px;left:50%;top:27%;">
+		</div>
+		
+		<div id = "orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:320px;height:320px;left:38.5%;top:26%;">
+		</div>
+		
+		<div id = "mars">
+			<img src="images/mars.png" width="28x" height="28px"
+			style= "position:absolute;left:38%;top:43%;">
+		</div>
+		<div id = "orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:380px;height:380px;left:36.5%;top:22%;">
+		</div>
+		<div id = "jupiter">
+			<img src="images/jupiter.png" width="50px" height="50px"
+			style= "position:absolute;left:61.5%;top:55%;">
+		</div>
+		<div id = "orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:440px;height:440px;left:34.5%;top:18%;">
+		</div>
+		<div id = "saturn">
+			<img src="images/saturn.png" width="49.5px" height="49.5px"
+			style= "position:absolute;left:34%;top:60%;">
+		</div>
+		<div id = "orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:500px;height:500;left:32%;top:14%;">
+		</div>
+		<div id = "uranus">
+			<img src="images/uranus.png" width="46px" height="46px"
+			style= "position:absolute;left:40%;top:80%;">
+		</div>
+		<div id = "orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:550px;height:550px;left:30%;top:10%;">
+		</div>
+		<div id = "neptune">
+			<img src="images/neptune.png" width="40px" height="40px"
+			style= "position:absolute;left:60%;top:82%;">
+		</div>
+		<div id = "orbit" >
+			<img src="images/orbit.png" 
+			style= "position:absolute;width:600px;height:600px;left:28%;top:7%;">
+		</div>
+		<div id = "pluto">
+			<img src="images/pluto.png" width="25px" height="20px"
+			style= "position:absolute;left:50%;top:95%;">
+		</div>
+	</div>
+	</center>
+	
+	<a href="one.html" class="space" id="spaceship" >
+	<img src="images/spaceship.png" class="space" id="spaceship" onmouseover="this.src='images/spaceship2.png'; spaceHover()" onmouseout="this.src='images/spaceship.png'">
+	</a>
+		
+		<script type= "text/javascript">
+			spaceImg = document.getElementById("spaceship");
+			//document.write("<div class='fish' id='fish1'></div>");
+			spaceImg.style.backgroundImage = "url('"+spaceship.imageLink+"')";
+			
+			wooshspace();
+
+			function wooshspace(){
+				var randY = Math.floor(Math.random()*40);
+				var randX = Math.floor(Math.random()*90);
+
+
+				switch(spaceship.facing){
+					case FACE_DIR.LEFT:
+						
+						if(randX > spaceship.position.x){
+							console.log("from " + spaceship.position.x + " to " + randX);
+							console.log("switch to right");
+							spaceship.facing = FACE_DIR.RIGHT;
+							//fishImg.style.transform = "rotate(180deg)";
+						}
+						break;
+					case FACE_DIR.RIGHT:
+						if(randX < spaceship.position.x){
+							console.log("to " + spaceship.position.x + " from " + randX);
+							console.log("switch to left");
+							spaceship.facing = FACE_DIR.LEFT;
+							//fishImg.style.transform = "rotate(0deg)";
+						}
+						break;
+				}
+
+				spaceship.position.x = randX;
+				spaceship.position.y = randY;
+
+				spaceImg.style.marginTop = randY+"%";
+				spaceImg.style.marginLeft = randX+"%";
+				setTimeout("wooshspace()",6000);
+			}
+
+		</script>
+	
+	</body>
+</html>
