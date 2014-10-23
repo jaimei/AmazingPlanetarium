@@ -1,0 +1,100 @@
+//for the quiz
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+
+<body style="background:#f3f3f3 url('six.jpg');">
+
+<style>
+	#QuestionsResponses {
+		color:white;
+		font-family:verdana;
+		border-style: hidden;
+		}
+
+</style>
+<title> Quiz </title>
+<script type="text/javascript">
+
+var QuesResp = [
+  ['Is the fourth planet from the sun','Mars'],  ['Described as a red planet','Mars'],  ['An ancient greeks called the planet Ares after the God of War','Mars'],     [' It is the second planet from the Sun','Venus'], ['Named after the Roman goddess of love and beauty','Venus'],
+  ['Has the largest dust storms in the solar system','Mars'],  ['Is a terrestrial planet with the thin atmosphere composed primarily of carbon dioxide','Mars'],['Largest of the terrestrial planets','Earth'], ['Name comes from the Angle-Saxon word erda','Earth'],        ['it is the only planet not named after a god','Earth'],
+  ['it has a greatest density','Earth'], ['Is the third planet from the sun','Earth'],   ['Is the sixth planet from the sun','Saturn'],    ['The most distant that can be seen with the naked eye.','Saturn'],         ['It is best knows for its fabulous ring system','Saturn'],
+  ['It is the fifth brightest object in the solar system','Saturn'],  ['It is sometimes referred to as the Earth’s sister ','Venus'],        ['The surface of the planet is obscured by an opaque layer of clouds made up of sulfuric acid','Venus'],          ['Also known as retrograde rotation.','Venus'],  [' It is the closest planet to the Sun','Mercury'],
+  ['It has the highest orbital eccentricity of all the planets','Mercury'], ['It has a has a molten core','Mercury'],  ['It is the most cratered planet in the Solar System','Mercury'],   ['It is named for the Roman messenger to the gods','Mercury'],['It is the eighth planet from the Sun','Neptune'], ['The most distant planet from the Sun.','Neptune'], ['It was named after the Roman god of the sea','Neptune'],
+  [' It has a very active climate:','Neptune'],[' It has 14 moons','Neptune'], ['It’s not visible to the naked eye','Uranus'], ['First planet discovered with the use of a telescope.','Uranus'], ['It is often described as “rolling around the Sun on its side.”','Uranus'],[' It is often referred to as an “ice giant” planet','Uranus'],
+  ['It is the coldest planet ','Uranus'], ['It is the star at the centre of our solar system','Sun'], ['It has a very strong magnetic field','Sun'],['It generates solar wind:','Sun'],
+  ['It is the second closest dwarf planet','Pluto'], ['Named after the Greek god of the underworld','Pluto'], [' Has a eccentric and inclined orbit', 'Pluto'],   ['It is also the second most massive dwarf planet','Pluto']
+  
+];
+
+</script>
+
+</head>
+<body>
+<center><div id="QuestionsResponses"></div></center>	
+
+<script type="text/javascript">
+var maxQues = 10;
+var QRpointers = [];
+
+function randOrd() { return (Math.round(Math.random())-0.5); }
+
+window.onload = function() {
+  for (var i=0; i<QuesResp.length; i++) { QRpointers.push(i); }
+  QRpointers.sort(randOrd);                                  
+
+  var str = '<h1><center>Quiz</center></h1>';
+  
+  for (var Q=0; Q<maxQues; Q++) {
+    str += 'Question #'+(Q+1)+'<br>';
+    str += QuesResp[QRpointers[Q]][0];
+//    str += ' <input type="text" id="R'+Q+'" value="' +QuesResp[QRpointers[Q]][1]+ '"><p>';
+
+    str += ' <br/><input type="text" id="R'+Q+'"><p>';
+  }
+  str += '<INPUT value="CHECK ALL" type="button" onclick="scoreme()"><br/><br/><a href="planetarium.html">Back to Home</a><br/><br/><br/>'
+  
+  
+
+  
+  //str += '<INPUT id="score" type="text" size="8">';
+  document.getElementById('QuestionsResponses').innerHTML = str;
+   
+   
+
+   
+ 
+ 
+}
+function change(){
+	window.location.href = "planetarium.html";
+}
+function scoreme() {
+  var sum = 0;  var total=maxQues;
+  var corr, resp;
+  var sel = document.getElementById('QuestionsResponses').getElementsByTagName('input');  
+  for (var i=0; i<sel.length-1; i++) {
+    corr = QuesResp[QRpointers[i]][1];
+    resp = sel[i].value;
+    if (resp != '') {
+      if ( (corr.toLowerCase().indexOf(resp.toLowerCase()) ) != -1) { sum++; } 
+//      if (corr.toLowerCase() == resp.toLowerCase()) { sum++; }             
+//      if (corr == resp) { sum++; }                                            
+    }
+  }
+  if(sum<=4){
+  change();
+  document.getElementById('score').value = alert("Sorry you failed the quiz. Your total score is "+sum);
+	
+  }
+  else
+  change();
+  document.getElementById('score').value = alert("Congrats! You passed the quiz. Your total score is "+sum);
+}
+</script>
+
+</body>
+</html>
